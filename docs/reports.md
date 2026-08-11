@@ -23,13 +23,13 @@ Reports are produced **after every pull request, research pass, benchmark, or mi
 
 | Rule | Why |
 |---|---|
-| **No repo-relative links in the body.** Not `[positioning.md](../10-strategy/positioning.md)`, not `docs/…`, not anchors | The link resolves to nothing once the file is attached to an email. A dead link is worse than no link — it tells the reader something exists and then denies it |
+| **No repo-relative links in the body.** Not `[some-doc.md](../some-section/some-doc.md)`, not `docs/…`, not anchors | The link resolves to nothing once the file is attached to an email. A dead link is worse than no link — it tells the reader something exists and then denies it |
 | **Cite sources as plain text**: document name, then section — `positioning.md §3`, `ADR-0010` | The reader can ask for it by name. Someone with repo access can find it in seconds |
 | **External URLs are fine and encouraged** | They resolve everywhere. Vendor documentation, standards, press releases |
 | **Every figure carries its source inline** | The reader cannot follow a link to check it |
 | **Expand an abbreviation on first use, every time** | The reader may not have read the previous report, and probably has not read the tree |
 | **State the scope in the header block**, not by implication | The reader does not know what branch or PR this came from |
-| **Never cite a commit SHA from an unmerged branch** | It is unstable until it reaches `main`, and doubly useless to an external reader who cannot resolve it either way. Cite the pull request number instead — see [Commit messages](commit-messages.md) |
+| **Never cite a commit SHA from an unmerged branch** | It is unstable until it reaches `main`, and doubly useless to an external reader who cannot resolve it either way. Cite the pull request number instead — see [Commit messages](../git/commit-messages.md) |
 
 Internal cross-references *between reports in the same set* are the one exception: refer to them by **report ID and title** (`R003 — Benchmark`), never by file path. A recipient who was sent all six can find it; a recipient who was sent one is not left with a broken link.
 
@@ -45,7 +45,7 @@ R<NNN>-<subject-slug>-<YYYY-MM-DD>.md
 | `<subject-slug>` | Lowercase kebab-case. What the report is *about*, not what triggered it. Short enough to read in a file listing |
 | `<YYYY-MM-DD>` | The date the report describes, ISO-8601. **Not** the date the file was last touched |
 
-Example: `R003-benchmark-sourcing-platforms-2026-07-29.md`
+Example: `R003-competitor-benchmark-2026-07-29.md`
 
 **Why both a number and a date.** The number gives a stable citation (`R003`) that survives the subject being renamed. The date is what makes a shelf of reports navigable — reports describe a state at a moment, and the same subject will be reported on repeatedly.
 
@@ -93,7 +93,7 @@ The failure to avoid: a "summary" that tells the reader which document to open. 
 
 ## 5. The index
 
-`docs/70-reports/README.md` is a **registry**, not a reading guide. One row per report, and it stays inside the repo — it is the one document in the folder that is not sent externally.
+The reports folder's own `README.md` is a **registry**, not a reading guide. One row per report, and it stays inside the repo — it is the one document in the folder that is not sent externally. Where that folder lives is the project's choice; record it in the project's own `CONTRIBUTING.md`.
 
 Required columns: **file name · report ID · date · subject · area of context**.
 
@@ -122,6 +122,6 @@ Required columns: **file name · report ID · date · subject · area of context
 
 ## References
 
-- [CONTRIBUTING.md](../../CONTRIBUTING.md) — the document lifecycle table, where `report` is defined as a type
-- [Contribution index](README.md) — the three-layer rule these conventions follow
-- [Pull requests](pull-requests.md) — a PR merge is one of the triggers that produces a report
+- [Document lifecycle](document-lifecycle.md) — the type table, where `report` is defined and its status vocabulary set
+- [Contribution index](../README.md) — the three-layer rule these conventions follow
+- [Pull requests](../github/pull-requests.md) — a PR merge is one of the triggers that produces a report
