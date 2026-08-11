@@ -284,17 +284,17 @@ Co-authored-by: Name <email@example.com>
 
 **No AI assistant attribution, no vendor names, no model names, no session links, no "generated with" trailers.**
 
-This is not a style preference. Commit `73fa6e0` carries:
+This is not a style preference. One commit in the source project's history carries trailers of this shape:
 
 ```
-Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
-Claude-Session: https://claude.ai/code/session_01Gfim1jHza3xAHY1udJgETm
+Co-Authored-By: <Assistant Name Model-Version> <noreply@vendor.example>
+<Vendor>-Session: https://…/session_<opaque-id>
 ```
 
 Each of these three fails the §6 rule — nothing reads them — and each is sufficient on its own:
 
 - **The session URL resolves for exactly one person**, and only until it does not. A permanent record pointing at a private, expiring resource looks like a lead and is not one.
-- **It dates the record.** `Opus 4.8` will read like `IE6` within a year, on a commit whose actual content — the spec-class gating rule — is still correct and still load-bearing.
+- **It dates the record.** A model version will read like `IE6` within a year, on a commit whose actual content — the spec-class gating rule — is still correct and still load-bearing.
 - **It answers a question nobody asks of `git blame`.** The question is always *why is this line like this*. What editor, keyboard, or assistant produced it has never been part of the answer.
 
 `73fa6e0`'s body is otherwise a good example of the house style; the trailers are the only thing wrong with it. They are retired by this rule going forward, and **the commit is not being rewritten.**
