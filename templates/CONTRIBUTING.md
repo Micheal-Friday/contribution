@@ -14,7 +14,7 @@
 # Contributing
 
 This project follows the shared conventions at
-**[Micheal-Friday/contribution](https://github.com/Micheal-Friday/contribution)**.
+**[Micheal-Friday/Contribution](https://github.com/Micheal-Friday/Contribution)**.
 
 Read those for the rules. This file records only what is **specific to this
 project**: the values the rules take here, and the places this project
@@ -22,15 +22,15 @@ deliberately differs.
 
 | Area | Where |
 |---|---|
-| Branch names | [branch-naming](https://github.com/Micheal-Friday/contribution/blob/main/git/branch-naming.md) |
-| Commit messages | [commit-messages](https://github.com/Micheal-Friday/contribution/blob/main/git/commit-messages.md) |
-| Issues | [issues](https://github.com/Micheal-Friday/contribution/blob/main/github/issues.md) |
-| Pull requests | [pull-requests](https://github.com/Micheal-Friday/contribution/blob/main/github/pull-requests.md) |
-| Status updates | [issue-updates](https://github.com/Micheal-Friday/contribution/blob/main/github/issue-updates.md) |
-| Document lifecycle and naming | [document-lifecycle](https://github.com/Micheal-Friday/contribution/blob/main/docs/document-lifecycle.md) |
-| Decision records | [decisions](https://github.com/Micheal-Friday/contribution/blob/main/docs/decisions.md) |
-| Reports *(if this project issues them)* | [reports](https://github.com/Micheal-Friday/contribution/blob/main/docs/reports.md) |
-| Research *(if this project produces benchmarks)* | [research](https://github.com/Micheal-Friday/contribution/blob/main/docs/research.md) |
+| Branch names | [branch-naming](https://github.com/Micheal-Friday/Contribution/blob/main/git/branch-naming.md) |
+| Commit messages | [commit-messages](https://github.com/Micheal-Friday/Contribution/blob/main/git/commit-messages.md) |
+| Issues | [issues](https://github.com/Micheal-Friday/Contribution/blob/main/github/issues.md) |
+| Pull requests | [pull-requests](https://github.com/Micheal-Friday/Contribution/blob/main/github/pull-requests.md) |
+| Status updates | [issue-updates](https://github.com/Micheal-Friday/Contribution/blob/main/github/issue-updates.md) |
+| Document lifecycle and naming | [document-lifecycle](https://github.com/Micheal-Friday/Contribution/blob/main/docs/document-lifecycle.md) |
+| Decision records | [decisions](https://github.com/Micheal-Friday/Contribution/blob/main/docs/decisions.md) |
+| Reports *(if this project issues them)* | [reports](https://github.com/Micheal-Friday/Contribution/blob/main/docs/reports.md) |
+| Research *(if this project produces benchmarks)* | [research](https://github.com/Micheal-Friday/Contribution/blob/main/docs/research.md) |
 
 **Pinned to:** `main` · *or* `<tag>` — pin only if a convention change would
 disrupt work in flight. Say which, so nobody has to guess whether a rule that
