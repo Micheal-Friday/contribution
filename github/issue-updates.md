@@ -1,7 +1,6 @@
 ---
 type: process
 status: living
-version: 2.0
 updated: 2026-07-29
 tags: [process, contribution, issues, status-reporting, honesty]
 aliases: [status updates, issue comments, status comment, reporting against scope]

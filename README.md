@@ -65,6 +65,24 @@ The part of these conventions that is not conventional, and the part worth keepi
 6. **Commit messages describe the change, not the tooling.** No assistant attribution, no vendor names, no session links, no "generated with" trailers.
 7. **Record what a project cannot honestly enforce.** A convention nobody can follow teaches people the document is decorative — the stub has a section for exactly this.
 
+## Versioning and pinning
+
+**One version covers the whole set.** A git tag names a commit, not a file — `v1.0.0` is the state of every guide here at one moment. You cannot have `issues.md` at one version and `commit-messages.md` at another, which is why no file carries a version of its own.
+
+| Bump | Means |
+|---|---|
+| **MAJOR** | Following the old text now produces something wrong. Anyone on the previous version must read the diff |
+| **MINOR** | A new rule or guide. Existing practice stays valid |
+| **PATCH** | Clarification, better example, typo. No behavioural change |
+
+Every tag gets a **release** with notes saying what changed and which guides moved. The tag makes the link work; the notes are how a reader decides whether the change reaches them.
+
+**Adopting projects should pin to a tag, not track `main`.** `main` is this repository's working branch — it changes when a rule changes, with nobody told. A pinned project links to `/blob/v1.0.0/…`, so its contributors read exactly the text that project agreed to, and upgrading is a deliberate, reviewable commit to that project's stub rather than something that happens overnight.
+
+**"Pinning" is a convention, not a mechanism.** Nothing enforces it. It is two lines in a project's `CONTRIBUTING.md`: the version it follows, and links that carry that version instead of `main`. That is enough, because a contributor reads their project's file and follows its links — they never see a version their project did not choose.
+
+---
+
 ## Adopting these
 
 1. Copy [`templates/CONTRIBUTING.md`](templates/CONTRIBUTING.md) to the project root.

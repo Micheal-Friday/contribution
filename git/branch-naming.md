@@ -1,7 +1,6 @@
 ---
 type: process
 status: living
-version: 2.0
 updated: 2026-07-29
 tags: [contribution, git, branches, process]
 aliases: [branch naming, branch conventions]

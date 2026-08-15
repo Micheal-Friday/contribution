@@ -1,7 +1,6 @@
 ---
 type: process
 status: living
-version: 1.0
 updated: 2026-07-29
 tags: [contribution, reports, naming, process]
 aliases: [report conventions, writing reports]
